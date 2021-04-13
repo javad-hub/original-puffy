@@ -1,0 +1,21 @@
+{%extends 'base.html' %}
+{%block title%}
+shits
+{%endblock%}
+{%block content%}
+
+    <h1>Shit list</h1>
+    <div class="shits">
+      {% for shit in shits %}
+      <div class="shit">
+      <h2>
+       <a href="{% url 'shits:detail' slug=shit.slug %}">{{shit.title}}</a>
+      </h2>
+      <p>{{shit.snippet}}</p>
+      <p>{{shit.date}}</p>
+      <p class="author">added by {{shit.author.username}}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+{%endblock%}

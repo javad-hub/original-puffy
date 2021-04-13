@@ -1,0 +1,119 @@
+body {
+  background-color: orange;
+  background-image: url(puffy1.jpg);
+  background-repesat-y:no-repeat;
+  background-attachment: fixed;
+  color:plum;
+}
+body *{
+  font-family:fantasy;
+}
+h1,h2,h3,h4,h5{
+  font-weight:normal;
+  margin:0;
+}
+
+a,a:hover,a:visited{
+  color:red;
+  text-decoration:none;
+}
+.wrapper{
+  max-width:960px;
+  margin:0 auto;
+}
+div.wrapper h1{
+  text-align:center;
+  margin:100px auto;
+  font-size:2.4em;
+}
+header{
+  dispaly:grid;
+  grid-template-column:1fr 1fr
+  padding:20px 0;
+}
+nav li{
+  display:inline-block;
+  margin-left:20px;
+}
+nav button{
+  background:none;
+  color:white;
+  cursor:pointer;
+  border:0;
+  font-size:1em;
+}
+.shits{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap:30px;
+}
+.shit{
+  padding:10px;
+  border:1px solid light green;
+  position:relative;
+  padding-bottom:40px;
+}
+.shit h2{
+  font-size:1.2em;
+}
+.shit .author{
+  padding:10px;
+  background-color:yellowgreen;
+  position:absolute;
+  right:0;
+  bottom:0;
+  margin:0;
+  color:blueviolet;
+}
+.shit-detail .shit{
+  padding:0;
+}
+.shit-detail .shit img{
+  max-width:100%;
+}
+
+.shit-detail .shit h2{
+  text-align:center;
+  font-size:2em;
+}
+.shit-detail .shit p{
+  text-align:center;
+}
+.site-form{
+  margin-top:60px;
+  border:1px solid green;
+  padding:20px;
+}
+.site-form input,.site-form textarea{
+  display:block;
+  margin:20px 0 0 0;
+  padding:10px;
+}
+a.highlight{
+  border:1px solid brown;
+  padding:10 px;
+  border-radius:4px;
+  color:gold;
+}
+.helptext,.helptext ul{
+  margin:0 auto 20px;
+  color:goldenrod;
+  font-size:0.0em;
+  display:block;
+}
+.errorlist li{
+  padding:10px;
+  list-style-type:none;
+  border:1px solid pink;
+  color:pink;
+  margin:10px 0;
+}
+.errorlist{padding:0;}
+.site-form input[type="submit"]{
+  border:0;
+  color:black;
+  font-size:1.2em;
+  background:green;
+  border-radius:4px;
+  margin:10px 0;
+}
